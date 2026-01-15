@@ -10,7 +10,7 @@ Exploratory and descriptive analysis of Cyclistic (Divvy) bike-share trips using
 
 This project analyzes Cyclistic bike-share trip data to understand how **annual members** and **casual riders** use the service differently. The goal is to generate actionable insights to support a marketing strategy focused on converting casual riders into annual members.
 
-Using two datasets (**Divvy 2019 Q1** and **Divvy 2020 Q1**), I performed data cleaning and standardization, merged both files into one dataset, and summarized user behavior patterns by weekday. The analysis shows clear behavioral differences between the two groups: members generate the majority of rides (higher frequency and consistency across weekdays), while casual riders tend to take fewer rides but with longer average duration—especially on weekends.
+Using two datasets (**Divvy 2019 Q1** and **Divvy 2020 Q1**), I cleaned and standardized the data in **Excel**, then merged and analyzed the datasets using **R (tidyverse)**. Finally, I built an interactive dashboard in **Tableau** to visualize key ridership trends by weekday. The analysis reveals clear behavioral differences between both segments: annual members generate the majority of rides (higher frequency and consistency across weekdays), while casual riders take fewer rides but with longer average trip durationespecially on weekends.
 
 Based on this, I recommend:
 
@@ -20,6 +20,14 @@ Based on this, I recommend:
 - Designing offers that convert long-duration casual riders into members
 
 ---
+
+## Dashboard Preview
+
+![Cyclistic bike share tableau](https://github.com/royedherrera1/cyclistic-bike-share-analysis/blob/main/Dashboard%20Cyclistic%20bike-share.png?raw=true)
+
+
+---
+
 
 ## Business Problem
 
@@ -130,10 +138,10 @@ These findings support:
 ## Dashboard and Data Access
 
 - **Tableau Public Dashboard:**  
-  *(Add your link here)*
+  *https://public.tableau.com/views/CyclisticBike-Share_17684286176530/Dashboard1?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link*
 
-- **Scripts / Code:**  
-  Available in the `scripts/` folder.
+- **Code:**  
+  Available in the `code/` folder.
 
 - **Aggregated Tableau-ready dataset:**  
   Available in the `data/` folder (e.g., `tableau_summary.csv`).
@@ -146,6 +154,24 @@ These findings support:
 - **R / tidyverse:** data wrangling, aggregation, feature engineering
 - **Tableau Public:** dashboard design, KPI reporting, storytelling
 - **Data Analytics Process:** Ask, Prepare, Process, Analyze, Share, Act
+
+---
+
+## Data Source & License
+
+This analysis uses public Divvy (Cyclistic) trip data provided in the Google Data Analytics Capstone project.
+
+**Datasets used:**
+- Divvy_Trips_2019_Q1 (Google Sheet): https://docs.google.com/spreadsheets/d/1uCTsHlZLm4L7-ueaSLwDg0ut3BP_V4mKDo2IMpaXrk4/template/preview?resourcekey=0-dQAUjAu2UUCsLEQQt20PDA#gid=1797029090
+- Divvy_Trips_2020_Q1 (Google Sheet): https://docs.google.com/spreadsheets/d/179QVLO_yu5BJEKFVZShsKag74ZaUYIF6FevLYzs3hRc/template/preview#gid=640449855
+
+**License:**
+- Divvy Data License Agreement: https://divvybikes.com/data-license-agreement
+
+The original raw datasets are not included in this repository due to size and licensing considerations.
+Only cleaned/aggregated outputs and analysis scripts are provided for reproducibility.
+
+This project is for educational purposes only and is not affiliated with Divvy or Motivate International Inc.
 
 ---
 
